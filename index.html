@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>石井花壇 | 温海温泉旅館【公式サイト】</title>
+        <link rel="icon" type="image/png" href="img/logo02-min.png">
+    
+        <!-- OGP -->
+        <meta property="og:title" content="石井花壇 | 温海温泉旅館【公式サイト】">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://xs791421.xsrv.jp">
+        <meta property="og:image" content="https://xs791421.xsrv.jp/img/mainbg01.jpg">
+        <meta property="og:site_name" content="石井花壇 | 温海温泉旅館【公式サイト】">
+        <meta property="og:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+        伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@njCDBz8hbRKc12m">
+        <meta name=“robots” content=“noindex”>    
+    
+        <!-- STYLE -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/hamburger-menu.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/modal.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <link rel="stylesheet" href="css/aos.css">
+        
+        <!-- SCRIPT -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+        <script src="js/aos.js"></script>
+    
+    </head>
+    <body>
+    <header class="header">
+        <div class="header__inner">
+            <h1><a href="index.html"><img class="header__logo" src="img/top-header-logo-min.png" alt="logo"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="oheya.html">お部屋</a></li>
+                    <li><a href="menu.html">お料理</a></li>
+                    <li><a href="onsen.html">温泉</a></li>
+                </ul>
+            </nav>
+            <div class="header__responsivemenu">
+                <button id="openModal">
+                    <span class="header__width480-hide"><img src="img/calender-min.png" alt=""></span>
+                    <p><span class="header__width480-hide">宿泊</span><span class="header__width480to340-show">ご</span>予約</p>
+                </button>
+                <!-- モーダルエリアここから -->
+                <section id="modalArea" class="modalArea">
+                    <div id="modalBg" class="modalBg"></div>
+                    <div class="modalWrapper">
+                        <div class="modalContents">
+                            <h1>宿泊予約</h1>
+                            <form id="form" action="">
+                                <label for="name">お名前</label><br>
+                                <input type="text" name="name" id="name" placeholder="例：温泉太郎"><br>
+                                <label for="email">メールアドレス</label><br>
+                                <input type="email" name="email" id="email" placeholder="例：Example@example.com"><br>
+                                <label for="plan">ご希望プラン（空いているプランのみ表示されます）</label><br>
+                                <select name="plan" id="plan" required>
+                                    <option value="" selected>プランを選択してください</option>
+                                    <option value="plan1"> ①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                                    <option value="plan2">②平日に優雅に楽しむ、特別宿泊プラン</option>
+                                    <option value="plan3">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+                                </select><br>
+                                <label for="date">日時選択</label><br>
+                                <input type="text" name="date" id="flatpickr" placeholder="日時を選択してください"><br>
+                            </form>
+                            <button id="submit">送信<span class="header__width340-hide">する</span></button>
+                        </div>
+                        <div id="closeModal" class="closeModal">
+                            <img src="img/close-min.png" alt="閉じる">
+                        </div>
+                    </div>
+                </section>
+                <!-- モーダルエリアここまで -->
+                <div class="openbtn btn-line header__scroll-color"><span></span><span>Menu</span><span></span></div>
+            </div><!-- /.header__responsivemenu -->
+        </div><!-- /.header__inner -->
+        <ul class="menu">
+            <li class="menu-list"><a href="oheya.html">お部屋</a></li>
+            <li class="menu-list"><a href="menu.html">お料理</a></li>
+            <li class="menu-list"><a href="onsen.html">温泉</a></li>
+            <li class="menu-bg"></li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="sec-fv">
+            <div class="sec-fv__bg" style="background-image: url(img/mainbg01.jpg)"></div>
+            <div class="sec-fv__bg" style="background-image: url(img/mainbg02.jpg)"></div>
+            <div class="sec-fv__bg" style="background-image: url(img/mainbg03.jpg)"></div>
+            <div class="sec-fv__caption">
+                <h2>頑張る人の</h2>
+                <h2>頑張らない時間</h2>
+            </div><!-- /.sec-fv__caption -->
+        </section>
+        <section class="sec-welcome">
+            <div class="sec-welcome__inner">
+                <div class="sec-welcome__title">
+                    <h3>温海温泉の</h3>
+                    <h3>美しさに癒やされて</h3>
+                </div><!-- /.sec-welcome__title -->
+                <div class="sec-welcome__story">
+                    <div>
+                        <p>東北の奥座敷である温海温泉郷</p>
+                        <p>開湯は約<span>１</span><span>３</span><span>０</span><span>０</span>年前とされ、役小角が</p>
+                        <p>発見したと伝えられます</p>
+                    </div>
+                    <div>
+                        <p>石井花壇は江戸より続く由緒ある旅館で</p>
+                        <p>クラシックな作りの中に<br class="sec-welcome__360wrap">大正ロマンあふれる</p>
+                        <p>内装を残しております</p>
+                    </div>
+                    <div>
+                        <p>圧倒的癒やしの空間で</p>
+                        <p>頑張る現代人に</p>
+                        <p>頑張らない圧倒的な非日常を<br class="sec-welcome__360wrap">ご提供します</p>
+                    </div>
+                </div><!-- /.sec-welcome__story -->
+                <div class="sec-welcome__signature">
+                    <h4>石井花壇</h4>
+                </div><!-- /.sec-welcome__signature -->
+            </div><!-- /.sec-welcome__inner -->
+        </section>
+        <section class="sec-about">
+            <div class="sec-about__inner">
+                <div class="sec-about__frame">
+                    <figure class="sec-about__img" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="img/oheya-top.jpg" alt="">
+                    </figure><!-- /.sec-about__img -->
+                    <div class="sec-about__body sec-about__body-room" data-aos="fade-up" data-aos-duration="1000">
+                        <h2>喧騒から離れた空間</h2>
+                        <h2>心落ち着く至極のひととき</h2>
+                        <div class="sec-about__text-layout">
+                            <p>まるで時が止まったかのような、<br class="sec-about__460wrap">圧倒的な静寂のなかで、</p>
+                            <p>ひたすらにゆったりと…。</p>
+                            <p>最高級の「何もしない時間」を<br class="sec-about__460wrap">お過ごしください。</p>
+                        </div><!-- /.sec-about__text-layout -->
+                        <button class="sec-about__button"><a href="oheya.html">お部屋について</a></button>
+                    </div><!-- /.sec-about__text -->
+                </div>
+                <div class="sec-about__frame">
+                    <figure class="sec-about__img" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="img/menu-top.jpg" alt="">
+                    </figure><!-- /.sec-about__img -->
+                    <div class="sec-about__body sec-about__body-dish" data-aos="fade-up" data-aos-duration="1000">
+                        <h2>出迎えるのは</h2>
+                        <h2>極上の温海料理</h2>
+                        <div class="sec-about__text-layout">
+                            <p>最も旬の食材を愉しむ、最高の贅沢を</p>
+                            <p>最高級A5ランクの米沢牛と共に頂く。</p>
+                            <p>あなたの人生史に残る「極上の感動」を</p>
+                            <p>お約束します。</p>
+                        </div><!-- /.sec-about__text-layout -->
+                        <button class="sec-about__button"><a href="menu.html">料理について</a></button>
+                    </div><!-- /.sec-about__text -->
+                </div>
+                <div class="sec-about__frame">
+                    <figure class="sec-about__img" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="img/onsen-top.jpg" alt="">
+                    </figure><!-- /.sec-about__img -->
+                    <div class="sec-about__body sec-about__body-spring" data-aos="fade-up" data-aos-duration="1000">
+                        <h2>疲れ切った身体にやすらぎを</h2>
+                        <h2>温海の源泉に癒やされて</h2>
+                        <div class="sec-about__text-layout">
+                            <p>古くは弘法大師の病をも治療した<br class="sec-about__460wrap">と言われる熱海の泉質。</p>
+                            <p>現代人の疲弊しきった身体を<br class="sec-about__460wrap">修復する最高級の湯治場として</p>
+                            <p>ご活用ください。</p>
+                        </div><!-- /.sec-about__text-layout -->
+                        <button class="sec-about__button"><a href="onsen.html">温泉について</a></button>
+                    </div><!-- /.sec-about__text -->
+                </div>
+            </div><!-- /.sec-about__inner -->
+        </section>
+        <section class="sec-plan" data-aos="fade-up" data-aos-duration="1000">
+            <div class="sec-plan__inner">
+                <div class="sec-plan__title overall-title">
+                    <h2 class="overall-title__img"><img src="img/logo02-min.png" alt=""></h2>
+                    <h2 class="overall-title__text">おすすめご宿泊プラン</h2>
+                </div><!-- /.sec-plan__title -->
+                <!--card-->
+                <div class="sec-plan__cards">
+                    <div class="sec-plan__card card">
+                        <figure class="card__img-wrapper">
+                            <img src="img/recommended01.jpg" alt="">
+                        </figure><!-- /.card__img-wrapper -->
+                        <div class="card__body">
+                            <div class="card__title">
+                                <h3>朝食付きプラン、日本近海で取れた<br class="sec-plan__no-wrap">のどぐろを朝食として…</h3>
+                            </div><!-- /.card__title -->
+                            <div class="card__text">
+                                <p>最高級と称されるのどぐろ、正式には「アカ<br class="sec-plan__no-wrap">ムツ」と呼ばれる魚、味は独特の上品な味わ<br class="sec-plan__no-wrap">いで、焼いても煮ても美味</p>
+                            </div><!-- /.card__text -->
+                        </div><!-- /.card__body -->
+                    </div>
+                    <div class="sec-plan__card card">
+                        <figure class="card__img-wrapper">
+                            <img src="img/recommended02.jpg" alt="">
+                        </figure><!-- /.card__img-wrapper -->
+                        <div class="card__body">
+                            <div class="card__title">
+                                <h3>【期間限定】熱海蟹をたっぷりと<br class="sec-plan__no-wrap">愉しむプラン。</h3>
+                            </div><!-- /.card__title -->
+                            <div class="card__text">
+                                <p>温海で水揚げされた蟹は「温海蟹」<br class="sec-plan__no-wrap">として知られ、嗜好品として愛されて<br class="sec-plan__no-wrap">きました。この宿泊プランでは存分に</p>
+                            </div><!-- /.card__text -->
+                        </div><!-- /.card__body -->
+                    </div>
+                    <div class="sec-plan__card card">
+                        <figure class="card__img-wrapper">
+                            <img src="img/recommended03.jpg" alt="">
+                        </figure><!-- /.card__img-wrapper -->
+                        <div class="card__body">
+                            <div class="card__title">
+                                <h3>【平日限定】贅沢美味懐石プラン。<br class="sec-plan__no-wrap">海辺の四季旬彩プラン。</h3>
+                            </div><!-- /.card__title -->
+                            <div class="card__text">
+                                <p class="no-line-breaks">熱海近海で取れた魚を鮮度そのままに舟盛りに<br class="sec-plan__no-wrap">してご提供。生きた味をお楽しみください。</p>
+                            </div><!-- /.card__text -->
+                        </div><!-- /.card__body -->
+                    </div>
+                </div><!-- /.cards -->
+            </div><!-- /.sec-plan__inner -->
+        </section>
+        <section class="sec-news" data-aos="fade-up" data-aos-duration="1000">
+            <div class="sec-news__inner">
+                <div class="sec-news__title overall-title">
+                    <h2 class="overall-title__img"><img src="img/logo02-min.png" alt=""></h2>
+                    <h2 class="overall-title__text">お知らせ</h2>
+                </div><!-- /.sec-news__title -->
+                <div>
+                    <ul class="sec-news__tab">
+                        <li class="active">営業情報</li>
+                        <li>その他</li>
+                    </ul>
+                    <div class="area">
+                        <div class="area-content show">
+                            <ul class="sec-news__cards">
+                                <li class="sec-news__card">
+                                    <figure class="sec-news__img-wrapper">
+                                        <img src="img/news01.jpg" alt="">
+                                    </figure><!-- /.sec-news__img-wrapper -->
+                                    <div class="sec-news__card-body">
+                                        <span class="sec-news__card-date">2020.12.24</span>
+                                        <p class="sec-news__card-text">年末最後の営業日は27日になります。</p>
+                                    </div><!-- /.sec-news__card-body -->
+                                </li>
+                                <li class="sec-news__card">
+                                    <figure class="sec-news__img-wrapper">
+                                        <img src="img/news02.jpg" alt="">
+                                    </figure><!-- /.sec-news__img-wrapper -->
+                                    <div class="sec-news__card-body">
+                                        <span class="sec-news__card-date">2020.12.24</span>
+                                        <p class="sec-news__card-text">年末最後の営業日のお知らせ</p>
+                                    </div><!-- /.sec-news__card-body -->
+                                </li>
+                                <li class="sec-news__card">
+                                    <figure class="sec-news__img-wrapper">
+                                        <img src="img/news02.jpg" alt="">
+                                    </figure><!-- /.sec-news__img-wrapper -->
+                                    <div class="sec-news__card-body">
+                                        <span class="sec-news__card-date">2020.12.11</span>
+                                        <p class="sec-news__card-text">12.21は臨時休業とさせていただきますので、<br class="sec-news__600wrap">よろしく<br class="sec-news__no-wrap">お願いします。</p>
+                                    </div><!-- /.sec-news__card-body -->
+                                </li>
+                                <li class="sec-news__card">
+                                    <figure class="sec-news__img-wrapper">
+                                        <img src="img/news01.jpg" alt="">
+                                    </figure><!-- /.sec-news__img-wrapper -->
+                                    <div class="sec-news__card-body">
+                                        <span class="sec-news__card-date">2020.12.24</span>
+                                        <p class="sec-news__card-text">年末最後の営業日のお知らせ</p>
+                                    </div><!-- /.sec-news__card-body -->
+                                </li>
+                                <li class="sec-news__card">
+                                    <figure class="sec-news__img-wrapper">
+                                        <img src="img/news01.jpg" alt="">
+                                    </figure><!-- /.sec-news__img-wrapper -->
+                                    <div class="sec-news__card-body">
+                                        <span class="sec-news__card-date">2020.12.01</span>
+                                        <p class="sec-news__card-text">和室の改装を行いますため、12.10はお休み<br class="sec-news__480wrap">させていただきます。</p>
+                                    </div><!-- /.sec-news__card-body -->
+                                </li>
+                                <li class="sec-news__card">
+                                    <figure class="sec-news__img-wrapper">
+                                        <img src="img/news02.jpg" alt="">
+                                    </figure><!-- /.sec-news__img-wrapper -->
+                                    <div class="sec-news__card-body">
+                                        <span class="sec-news__card-date">2020.12.24</span>
+                                        <p class="sec-news__card-text">年末最後の営業日のお知らせ</p>
+                                    </div><!-- /.sec-news__card-body -->
+                                </li>
+                            </ul>
+                        </div><!-- /.show -->
+                        <div class="area-content">
+                            <ul class="sec-news__cards">
+                                <li class="sec-news__card">
+                                    <figure class="sec-news__img-wrapper">
+                                        <img src="img/news02.jpg" alt="">
+                                    </figure><!-- /.sec-news__img-wrapper -->
+                                    <div class="sec-news__card-body">
+                                        <span class="sec-news__card-date">2020.12.xx</span>
+                                        <p class="sec-news__card-text">その他</p>
+                                    </div><!-- /.sec-news__card-body -->
+                                </li>
+                                <li class="sec-news__card">
+                                    <figure class="sec-news__img-wrapper">
+                                        <img src="img/news01.jpg" alt="">
+                                    </figure><!-- /.sec-news__img-wrapper -->
+                                    <div class="sec-news__card-body">
+                                        <span class="sec-news__card-date">2020.12.xx</span>
+                                        <p class="sec-news__card-text">その他</p>
+                                    </div><!-- /.sec-news__card-body -->
+                                </li>
+                            </ul>
+                        </div><!-- /.show -->
+                    </div><!-- /.area -->
+                </div>
+            </div><!-- /.sec-news__inner -->
+        </section>
+
+        <section class="sec-access" data-aos="fade-up" data-aos-duration="1000">
+            <div class="sec-access__inner">
+                <div class="sec-access__title overall-title">
+                    <h2 class="overall-title__img"><img src="img/logo02-min.png" alt=""></h2>
+                    <h2 class="overall-title__text">アクセス</h2>
+                </div><!-- /.sec-access__title -->
+                <div class="sec-access__contents">
+                    <figure class="sec-access__img-wrapper">
+                        <img class="sec-access__img" src="img/acess.jpg" alt="">
+                    </figure><!-- /.sec-access__img-wrapper -->
+                    <div class="sec-access__body">
+                        <h3 class="sec-access__index">住所</h3>
+                        <p class="sec-access__text">〒000-0000<br>山形県鶴岡市xxxxxxxxxx</p>
+                        <h3 class="sec-access__index">TEL/FAX</h3>
+                        <p class="sec-access__text">000-0000-0000/00-0000-0000</p>
+                        <h3 class="sec-access__index">営業時間</h3>
+                        <p class="sec-access__textl no-line-breaks">14:00-23:00<br>＊4名以上のご予約の場合は、最寄り駅の「鶴岡駅」より送迎が可能ですので、<br class="sec-access__no-wrap">ご連絡ください。</p>
+                    </div><!-- /.sec-access__body -->
+                </div><!-- /.sec-access__contents -->
+                <div class="sec-access__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49867.719557722885!2d139.56354091560925!3d38.63203513061497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1640131126582!5m2!1sja!2sjp" width="792" height="592" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div><!-- /.sec-access__inner -->
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-link">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="oheya.html">お部屋</a></li>
+                        <li><a href="menu.html">お料理</a></li>
+                        <li><a href="onsen.html">温泉</a></li>
+                    </ul>
+                </nav>
+                <h1 class="footer-logo"><a href="index.html"><img src="img/footer-logo-min.png" alt=""></a></h1>
+                <div class="footer-info">
+                    <div class="footer-info__inner">
+                        <p>〒000-0000</p>
+                        <p>山形県鶴岡市xxxxxxxxxxx</p>
+                        <p>TEL.000-0000-0000</p>
+                        <p>FAX.00-0000-0000</p>
+                    </div><!-- /.footer-info__inner -->
+                </div><!-- /.footer-info -->
+        </div><!-- /.footer-link -->
+        <div class="footer-copyright">
+            <div class="footer-inner">
+                <a href="index.html">
+                    <p>Copyright © 石井花壇 All Rights Reserved.</p>
+                </a>
+            </div><!-- /.footer-inner -->
+        </div><!-- /.footer-copyright -->
+    </footer>
+    <script>
+        const config = {
+            "locale": "ja",
+            mode: "range",
+            minDate: "today",
+        }
+        flatpickr("#flatpickr", config);
+    </script>
+</body>
+</html>
