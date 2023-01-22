@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>お部屋 - 石井花壇 | 温海温泉旅館【公式サイト】</title>
+        <link rel="icon" type="image/png" href="img/logo02-min.png">
+    
+        <!-- OGP -->
+        <meta property="og:title" content="石井花壇 | 温海温泉旅館【公式サイト】">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://xs791421.xsrv.jp">
+        <meta property="og:image" content="https://xs791421.xsrv.jp/img/mainbg01.jpg">
+        <meta property="og:site_name" content="石井花壇 | 温海温泉旅館【公式サイト】">
+        <meta property="og:description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。
+        伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@njCDBz8hbRKc12m">
+        <meta name=“robots” content=“noindex”>    
+    
+        <!-- STYLE -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/hamburger-menu.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/modal.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <link rel="stylesheet" href="css/aos.css">
+        
+        <!-- SCRIPT -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+        <script src="js/aos.js"></script>
+    
+    </head>
+    <body>
+    <header class="header sub">
+        <div class="header__inner">
+            <h1><a href="index.html"><img class="header__logo sub__logo" src="img/sub-header-logo-min.png" alt="logo"></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="oheya.html">お部屋</a></li>
+                    <li><a href="menu.html">お料理</a></li>
+                    <li><a href="onsen.html">温泉</a></li>
+                </ul>
+            </nav>
+            <div class="header__responsivemenu">
+                <button id="openModal">
+                    <span class="header__width480-hide"><img src="img/calender-min.png" alt=""></span>
+                    <p><span class="header__width480-hide">宿泊</span><span class="header__width480to340-show">ご</span>予約</p>
+                </button>
+                <!-- モーダルエリアここから -->
+                <section id="modalArea" class="modalArea">
+                    <div id="modalBg" class="modalBg"></div>
+                    <div class="modalWrapper">
+                        <div class="modalContents">
+                            <h1>宿泊予約</h1>
+                            <form id="form" action="">
+                                <label for="name">お名前</label><br>
+                                <input type="text" name="name" id="name" placeholder="例：温泉太郎"><br>
+                                <label for="email">メールアドレス</label><br>
+                                <input type="email" name="email" id="email" placeholder="例：Example@example.com"><br>
+                                <label for="plan">ご希望プラン（空いているプランのみ表示されます）</label><br>
+                                <select name="plan" id="plan" required>
+                                    <option value="" selected>プランを選択してください</option>
+                                    <option value="plan1"> ①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                                    <option value="plan2">②平日に優雅に楽しむ、特別宿泊プラン</option>
+                                    <option value="plan3">③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+                                </select><br>
+                                <label for="date">日時選択</label><br>
+                                <input type="text" name="date" id="flatpickr" placeholder="日時を選択してください"><br>
+                            </form>
+                            <button id="submit">送信<span class="header__width340-hide">する</span></button>
+                        </div>
+                        <div id="closeModal" class="closeModal">
+                            <img src="img/close-min.png" alt="閉じる">
+                        </div>
+                    </div>
+                </section>
+                <!-- モーダルエリアここまで -->
+                <div class="openbtn btn-line header__scroll-color"><span></span><span>Menu</span><span></span></div>
+            </div><!-- /.header__responsivemenu -->
+        </div><!-- /.header__inner -->
+        <ul class="menu">
+            <li class="menu-list"><a href="oheya.html">お部屋</a></li>
+            <li class="menu-list"><a href="menu.html">お料理</a></li>
+            <li class="menu-list"><a href="onsen.html">温泉</a></li>
+            <li class="menu-bg"></li>
+        </ul>
+
+    </header>
+    <main>
+        <div class="main__inner">
+            <div class="subheader-under"></div><!-- /.header-under -->
+            <section class="sec-top sec-top__bg__oheya">
+                <h1>お部屋</h1>
+            </section><!-- /.sec-top -->
+            <section class="sec-contents">
+                <div class="sec-contents__inner">
+                    <div class="breadcrumb">
+                        <ul class="breadcrumb-list" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                            <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                                <a itemprop="item" href="index.html"><span itemprop="name">トップ</span></a>
+                                <meta itemprop="position" content="1">
+                            </li>
+                            <li class="breadcrumb-item"><p>&gt;<span>お部屋</span></p></li>
+                        </ul>
+                    </div>
+                    <div class="sec-contents__message" data-aos="fade-up" data-aos-duration="1000">
+                        <p>創業より受け継がれてきた<br class="sec-contents__message__w500">石井花壇の和の造り<br>温海の雄大な絶景を堪能して<br class="sec-contents__message__w500">いただけるように設計された客室<br>ゆるやかに流れ行く時間に身を委ねて</p>
+                    </div><!-- /.sec-contents__message -->
+                    <div class="sub-content">
+                        <div class="sub-content-inner">
+                            <div class="content-list">
+                                <div class="content-item" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="text">
+                                        <div class="title">温泉付き客室</div>
+                                        <div class="desc -room -sp">温海の源泉かけ流し露天風呂付き客室になります。あなただけの上質な安らぎのひとときを。</div>
+                                        <div class="desc -room">温海の源泉かけ流し露天風呂付き客室になります。<br>あなただけの上質な安らぎのひとときを。</div>
+                                        <div class="attention">＊部屋数に限りがございます。<br>＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。</div>
+                                    </div>
+                                    <div class="image"><img src="img/oheya01.jpg" alt="お部屋の画像"></div>
+                                </div>
+                                <div class="content-item" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="text">
+                                        <div class="title">庭園付き客室</div>
+                                        <div class="desc -room -sp">庭園付きの客室になります。お庭を見ながら、ほっとするひとときをお過ごしください。</div>
+                                        <div class="desc -room">庭園付きの客室になります。<br>お庭を見ながら、ほっとするひとときをお過ごしください。</div>
+                                        <div class="attention">＊お庭は複数のお客様と囲む形になります。<br>＊部屋数に限りがあります。<br>＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。</div>
+                                    </div>
+                                    <div class="image"><img src="img/oheya02.jpg" alt="お部屋の画像"></div>
+                                </div>
+                                <div class="content-item" data-aos="fade-up" data-aos-duration="1000">
+                                    <div class="text">
+                                        <div class="title">一般客室</div>
+                                        <div class="desc -room -sp">最もベーシックな客室になります。伝統の中にモダンさを取り入れた内装となっており、とても過ごしやすくしていただけます。</div>
+                                        <div class="desc -room">最もベーシックな客室になります。伝統の中にモダンさを取り入れた<br>内装となっており、とても過ごしやすくしていただけます。</div>
+                                        <div class="attention">＊全室お部屋より日本海を望むことができます。</div>
+                                    </div>
+                                    <div class="image"><img src="img/oheya03.jpg" alt="お部屋の画像"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.sec-contents__inner -->
+            </section><!-- /.sec-contents -->
+        </div><!-- /.main__inner -->
+    </main>
+    <footer class="footer">
+        <div class="footer-link">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="oheya.html">お部屋</a></li>
+                        <li><a href="menu.html">お料理</a></li>
+                        <li><a href="onsen.html">温泉</a></li>
+                    </ul>
+                </nav>
+                <h1 class="footer-logo"><a href="index.html"><img src="img/footer-logo-min.png" alt=""></a></h1>
+                <div class="footer-info">
+                    <div class="footer-info__inner">
+                        <p>〒000-0000</p>
+                        <p>山形県鶴岡市xxxxxxxxxxx</p>
+                        <p>TEL.000-0000-0000</p>
+                        <p>FAX.00-0000-0000</p>
+                    </div><!-- /.footer-info__inner -->
+                </div><!-- /.footer-info -->
+        </div><!-- /.footer-link -->
+        <div class="footer-copyright">
+            <div class="footer-inner">
+                <a href="index.html">
+                    <p>Copyright © 石井花壇 All Rights Reserved.</p>
+                </a>
+            </div><!-- /.footer-inner -->
+        </div><!-- /.footer-copyright -->
+    </footer>
+    <script>
+        const config = {
+            "locale": "ja",
+            mode: "range",
+            minDate: "today",
+        }
+        flatpickr("#flatpickr", config);
+    </script>
+</body>
+</html>
